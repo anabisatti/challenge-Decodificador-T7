@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Decodificador de Mensagem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="coluna-esquerda">
+            <header>
+                <img src="assets/img/logo.png" alt="Logo Alura">
+            </header>
+            <form id="formulario">
+                <div class="textarea-container">
+                    <textarea id="texto" placeholder="Digite seu texto"></textarea>
+                </div>
+                <p class="aviso">
+                    <img src="assets/img/ico-01.png" alt="Atenção">
+                    Apenas letras minúsculas e sem acento.
+                </p>
+                <div class="botoes">
+                    <button type="button" class="botao-01" onclick="criptografarTexto()">Criptografar</button>
+                    <button type="button" class="botao-02" onclick="descriptografarTexto()">Descriptografar</button>
+                </div>
+            </form>
+        </div>
+        <div class="coluna-direita">
+            <img src="./assets/img/pantera.png" alt="Imagem">
+            <h1>Nenhuma mensagem encontrada</h1>
+            <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            <button class="btn-copiar" onclick="btnCopiar()">Copiar</button> 
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Desenvolvido por Ana Bisatti.</p>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>
